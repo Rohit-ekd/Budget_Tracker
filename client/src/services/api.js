@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://budget-tracker-92un.onrender.com/api",
+  baseURL: "https://budget-tracker-92un.onrender.com",
 });
 
 API.interceptors.request.use((req) => {
