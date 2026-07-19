@@ -1,0 +1,135 @@
+:root {
+  --text: #5e5d6b;
+  --text-h: #17151f;
+  --bg: #f7f6f2;
+  --border: #e6e0d6;
+  --code-bg: #f4f3ec;
+  --accent: #0f766e;
+  --accent-strong: #115e59;
+  --accent-soft: #d9f3ee;
+  --accent-border: rgba(15, 118, 110, 0.28);
+  --card: rgba(255, 255, 255, 0.84);
+  --shadow:
+    rgba(28, 24, 39, 0.08) 0 18px 40px -24px,
+    rgba(28, 24, 39, 0.06) 0 8px 16px -12px;
+
+  --sans: "Segoe UI Variable", "Aptos", "Trebuchet MS", sans-serif;
+  --heading: "Segoe UI Variable Display", "Aptos Display", "Trebuchet MS",
+    sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #c8d0d9;
+    --text-h: #f3f7fb;
+    --bg: #101a20;
+    --border: #23343b;
+    --code-bg: #16252c;
+    --accent: #5eead4;
+    --accent-strong: #2dd4bf;
+    --accent-soft: rgba(94, 234, 212, 0.12);
+    --accent-border: rgba(94, 234, 212, 0.3);
+    --card: rgba(18, 31, 37, 0.82);
+    --shadow:
+      rgba(0, 0, 0, 0.36) 0 18px 36px -22px,
+      rgba(0, 0, 0, 0.22) 0 10px 16px -12px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.1), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(247, 246, 242, 0.98));
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+code {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
