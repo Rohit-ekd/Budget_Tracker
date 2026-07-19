@@ -1,6 +1,6 @@
 # Expense Tracker (Full-Stack)
 
-A simple full-stack Expense Tracker web app with a React + Vite frontend and a Node/Express backend. It supports user authentication, adding and listing transactions, and basic expense summaries.
+A simple full-stack Expense Tracker web app with a React + Vite frontend and a Node/Express backend. It supports user authentication, adding and listing transactions, and basic expense summaries. Live Demo : https://budget-tracker-client-pmzw.onrender.com
 
 ## Features
 
